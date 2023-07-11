@@ -2,7 +2,7 @@
 
 ## Description
 
-This project will use the four pillars of object oriented programming in order to create a base class that can be used for any moving characters. A player character which can be controlled by the user and an automated character will be made using this base class. Everything will be programmed using the godot game building engine and GDScript.
+This project is a passion project to learn the basics of creating a 2D videogame. In this demo, there is a player character that can be controlled by the user and an automated character that attacks the player when within a certain range. Everything will be programmed using the Godot game building engine and GDScript.
 
 ## Prerequisites
 
