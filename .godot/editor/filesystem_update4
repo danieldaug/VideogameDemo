@@ -1,2 +1,6 @@
-res://TestRunner.tscn
 res://SchoolProjectScene.tscn
+res://NPC.gd
+res://NPCHitbox.gd
+res://Player.gd
+res://PlayerHitbox.gd
+res://TestRunner.tscn

@@ -10,11 +10,6 @@ extends CharacterBody2D
 ## Nodes that are explicitly manipulated in this script are connected
 ## in the _ready() method, which executes once when the program starts
 
-#INHERITANCE
-var parent=load("res://AbstractMovingCharacter.gd").new()
-
-#variables UP through knockbackEnabled
-#are "inherited" by AbstractMoving Character
 const UP= Vector2(0,-1)
 const GRAVITY= 30
 const MAXFALLSPEED=200
@@ -33,7 +28,6 @@ var knockbackEnabled=false
 var action=3
 var playerLocation=0
 
-#INHERITED FUNCTION
 func _movement_and_gravity():
 	motion.y+=GRAVITY
 	if motion.y>MAXFALLSPEED:
@@ -41,11 +35,9 @@ func _movement_and_gravity():
 	#prevents motion on x-axis from exceeding MAXSPEED
 	motion.x=clamp(motion.x,-MAXSPEED,MAXSPEED)
 
-#INHERITED FUNCTION
 func _die():
 	queue_free()
-	
-#Override
+
 func take_damage(damage,direction):
 	#set knockback direction based on player position
 	if direction==true:

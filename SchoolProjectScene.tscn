@@ -1,8 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://cdrk7yv8g4512"]
+[gd_scene load_steps=34 format=3 uid="uid://cdrk7yv8g4512"]
 
 [ext_resource type="Texture2D" uid="uid://3luruvkl5qf4" path="res://terrain-tilemap.png" id="1_bam25"]
-[ext_resource type="Script" path="res://AbstractMovingCharacter.gd" id="2_eqx77"]
-[ext_resource type="Script" path="res://AbstractHitbox.gd" id="3_erwt3"]
 [ext_resource type="Script" path="res://Player.gd" id="3_x6bq7"]
 [ext_resource type="Script" path="res://PlayerHitbox.gd" id="4_4wb87"]
 [ext_resource type="Script" path="res://NPC.gd" id="4_br8d4"]
@@ -776,12 +774,6 @@ texture_filter = 1
 tile_set = SubResource("TileSet_l3ti6")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 2, 0, 1, 65538, 0, 2, 65538, 0, 3, 65538, 0, 4, 65538, 0, 5, 65538, 0, 6, 65538, 0, 7, 131074, 0, 8, 393218, 1, -65528, 393218, 0, -65527, 458754, 0, 9, 458754, 1, -65536, 131074, 1, -131072, 131074, 1, -131062, 655362, 0, -131064, 655362, 0, -131063, 589826, 0, -196600, 589826, 1, -196599, 655362, 1, -196598, 655362, 0, -65531, 65538, 2, -65532, 65538, 2, -65533, 65538, 2, -65534, 65538, 2, -65535, 65538, 2, -131071, 65538, 2, -131070, 65538, 2, -131069, 65538, 2, -131068, 65538, 2, -131067, 65538, 2, -131066, 2, 1, -65530, 2, 1, -65529, 196610, 1, -131065, 196610, 0, -196608, 131074, 1, -262144, 131074, 1, -327680, 131074, 1, -65526, 458754, 0, -65525, 458754, 0, -65524, 458754, 0, -65523, 458754, 0, -65522, 458754, 0, -65521, 524290, 0, 11, 458754, 1, 12, 458754, 1, 10, 458754, 1, 13, 458754, 1, 14, 458754, 1, 15, 524290, 1, -196597, 589826, 1, -196596, 655362, 1, -131061, 589826, 0, -131060, 589826, 0, -196595, 589826, 0, -131059, 655362, 0, -131058, 589826, 0, -196594, 655362, 0, -131057, 655362, 0, -196593, 589826, 0)
-
-[node name="AbstractMovingCharacter" type="Node" parent="."]
-script = ExtResource("2_eqx77")
-
-[node name="AbstractHitbox" type="Node" parent="."]
-script = ExtResource("3_erwt3")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("3_x6bq7")
